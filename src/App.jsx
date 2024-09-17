@@ -12,7 +12,7 @@ function App() {
   }
 
   function handleAddTodos(newTodo) {
-    const newTodoList = [...todos, newTodo];
+    const newTodoList = [...todos, newTodo]
     persistData(newTodoList)
     setTodos(newTodoList)
   }
@@ -21,6 +21,7 @@ function App() {
     const newTodoList = todos.filter((todo, todoIndex) => {
       return todoIndex !== index
     })
+    persistData(newToDoList)
     setTodos(newTodoList)
   }
 
