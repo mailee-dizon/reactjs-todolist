@@ -21,7 +21,6 @@ function App() {
     const newTodoList = todos.filter((todo, todoIndex) => {
       return todoIndex !== index
     })
-    persistData(newToDoList)
     setTodos(newTodoList)
   }
 
